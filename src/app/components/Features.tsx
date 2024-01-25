@@ -40,8 +40,8 @@ const Features: React.FC = () => {
             Interactive Elements
           </h3>
           <p className="text-gray-600 dark:text-gray-300 mt-2">
-            Implement interactive UI elements easily. Tailwind's hover, focus,
-            and other interactive classes make it simple and accessible.
+            Implement interactive UI elements easily. Tailwind&apos;s hover,
+            focus, and other interactive classes make it simple and accessible.
           </p>
           <button className="mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">
             Explore
