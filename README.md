@@ -254,7 +254,16 @@ module.exports = {
   ]
 }
 ```
-# 3. Comparison
+# 3. Optimizing for Production
+Tailwind CSS is incredibly performance focused and aims to produce the smallest CSS file possible by only generating the CSS you are actually using in your project.
+
+Combined with minification and network compression, this usually leads to CSS files that are less than 10kB, even for large projects. For example, Netflix uses Tailwind for Netflix Top 10 and the entire website delivers only 6.5kB of CSS over the network.
+
+<img src="https://github.com/vlas-dev/tailwind-spike/assets/30755101/ccaddeda-ea3e-4f49-bda8-9f9dc534dd8a" width="500" />
+
+If you’re using Tailwind CLI, you can minify your CSS by adding the --minify flag:
+```npx tailwindcss -o build.css --minify```
+# 4. Comparison
 ![image](https://github.com/vlas-dev/tailwind-spike/assets/30755101/78be40de-c958-4fc9-93ce-9386ca789cb6)
 ![image](https://github.com/vlas-dev/tailwind-spike/assets/30755101/447f5ea5-b294-430f-acf0-659f071b4811)
 ![image](https://github.com/vlas-dev/tailwind-spike/assets/30755101/24127a19-40a6-4358-bde9-f9ad04a2fc77)
