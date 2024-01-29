@@ -2,12 +2,16 @@
 
 # 1. What is Tailwind?
 Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables.
-![image](https://github.com/vlas-dev/tailwind-spike/assets/30755101/65219d97-701c-4f48-b329-3d421ac376bb)
+
+<img src="https://github.com/vlas-dev/tailwind-spike/assets/30755101/65219d97-701c-4f48-b329-3d421ac376bb" width="500" />
+
 # 2. How it works?
 Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.
-![image](https://github.com/vlas-dev/tailwind-spike/assets/30755101/682cff2c-c42f-4c29-a229-1c7d3d27324e)
+
+<img src="https://github.com/vlas-dev/tailwind-spike/assets/30755101/682cff2c-c42f-4c29-a229-1c7d3d27324e" width="500" />
+
 # 3. Core Concepts
-## Utility-First Fundamentals
+## 📃Utility-First Fundamentals
 Using a utility-first workflow to build complex components from a constrained set of primitive utilities.
 
 There are two ways of getting the following component done:<br/>
@@ -70,7 +74,7 @@ There are two ways of getting the following component done:<br/>
   </div>
 </div>
 ```
-## Hover, Focus, and Other States
+## 🖱️Hover, Focus, and Other States
 Every utility class in Tailwind can be applied conditionally by adding a modifier to the beginning of the class name that describes the condition you want to target.
 
 For example, to apply the bg-sky-700 class on hover, use the hover:bg-sky-700 class
@@ -89,7 +93,7 @@ Tailwind includes modifiers for just about everything you’ll ever need, includ
 - Pseudo-elements, like ::before, ::after, ::placeholder, and ::selection
 - Media and feature queries, like responsive breakpoints, dark mode, and prefers-reduced-motion
 - Attribute selectors, like [dir="rtl"] and [open]
-## Responsive Design
+## 📲Responsive Design
 Every utility class in Tailwind can be applied conditionally at different breakpoints, which makes it a piece of cake to build complex responsive interfaces without ever leaving your HTML.
 
 <img src="https://github.com/vlas-dev/tailwind-spike/assets/30755101/2ced2181-a3ae-4725-8941-e29451d58aab" width="600" />
@@ -107,7 +111,7 @@ There are five breakpoints by default, inspired by common device resolutions:
 <!-- Width of 16 by default, 32 on medium screens, and 48 on large screens -->
 <img class="w-16 md:w-32 lg:w-48" src="...">
 ```
-## Dark Mode
+## 🌑Dark Mode
 <img src="https://github.com/vlas-dev/tailwind-spike/assets/30755101/417ea43d-6b00-4e10-9260-bbde9a6585d6" width="500" />
 
 Tailwind includes a dark variant that lets you style your site differently when dark mode is enabled
@@ -152,14 +156,14 @@ module.exports = {
 </body>
 </html>
 ```
-## Reusing Styles
+## 🔁Reusing Styles
 Tailwind encourages a utility-first workflow, where designs are implemented using only low-level utility classes. This is a powerful way to avoid premature abstraction and the pain points that come with it.
 
 <img src="https://github.com/vlas-dev/tailwind-spike/assets/30755101/6e96cce3-89de-4654-a286-b1e74221ba79" />
 
 But of course as a project grows, you’ll inevitably find yourself repeating common utility combinations to recreate the same design in many different places.
 When duplication is localized to a group of elements in a single file, the easiest way to deal with it to use [multi-cursor editing](https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor) to quickly select and edit the class list for each element at once
-## Customizing the Framework
+## ✍️Customizing the Framework
 Customize the framework to match your brand and extend it with your own custom styles.
 ### Customizing your theme
 If you want to change things like your color palette, spacing scale, typography scale, or breakpoints, add your customizations to the theme section of your tailwind.config.js file:
