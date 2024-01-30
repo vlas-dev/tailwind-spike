@@ -26,9 +26,9 @@ export interface CardProps extends VariantProps<typeof cardVariants> {
 }
 
 // Card Component
-const Card: FC<CardProps> = ({ children, color, text, className }) => {
+const Card: FC<CardProps> = ({ children, color, className }) => {
   return (
-    <div className={cn(cardVariants({ className, color, text }))}>
+    <div className={cn(cardVariants({ className, color }))}>
       {children}
     </div>
   );
