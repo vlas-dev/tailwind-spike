@@ -23,6 +23,7 @@ const cardVariants = cva(
 // CardProps interface
 export interface CardProps extends VariantProps<typeof cardVariants> {
   children?: React.ReactNode;
+  className?: string; 
 }
 
 // Card Component
