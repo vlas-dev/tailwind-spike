@@ -1,19 +1,16 @@
 'use client'
 import React from "react";
-import Navbar from "./components/Navbar";
-import Features from "./components/Features";
-import Footer from "./components/Footer";
-import { ThemeProvider } from "./context/ThemeContext";
+import Navbar from "../components/Navbar";
+import Features from "../components/Features";
+import Footer from "../components/Footer";
 
 const Home: React.FC = () => {
   return (
-    <ThemeProvider>
       <div>
         <Navbar />
         <Features />
         <Footer />
       </div>
-    </ThemeProvider>
   );
 };
 
