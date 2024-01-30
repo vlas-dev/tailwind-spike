@@ -210,6 +210,27 @@ module.exports = {
   }
 }
 ```
+## Reusable and Customizable Components with CVA, Clsx and TailwindMerge
+
+Enhance your React projects with TailwindCSS by diving into Görkem Karamolla's comprehensive guide. This tutorial covers creating reusable and customizable components, utilizing the power of CVA (Create Variant API), clsx, and tailwindMerge. Perfect for developers looking to streamline their component customization process in React applications.
+
+For a detailed walkthrough, check out the article:
+
+[React Tailwind: Reusable and Customizable Components with CVA, clsx, and tailwindMerge Combo Guide](https://medium.com/@gorkemkaramolla/react-tailwind-reuseable-and-customizable-components-with-cva-clsx-and-tailwindmerge-combo-guide-c3756bdbbf16)
+
+This guide is an invaluable resource for React developers seeking to enhance their styling strategies. It offers practical tips and insights into using TailwindCSS for dynamic, scalable design solutions in a React environment.
+
+## Key Takeaways
+
+- Understanding the Create Variant API (CVA) in the context of React and TailwindCSS.
+- Effective use of `clsx` for conditional class name merging.
+- Leveraging `tailwindMerge` to combine Tailwind utility classes seamlessly.
+- Strategies for building highly reusable and customizable React components.
+
+---
+
+Explore this guide to elevate your React and TailwindCSS projects with efficient, elegant styling techniques.
+
 ### Using arbitrary values
 When you find yourself really needing something like top: 117px to get a background image in just the right spot, use Tailwind’s square bracket notation to generate a class on the fly with any arbitrary value:
 ```
