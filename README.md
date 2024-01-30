@@ -156,6 +156,14 @@ module.exports = {
 </body>
 </html>
 ```
+## Implementing Dark Mode in Next.js with TailwindCSS and next-themes
+
+Following the guide by Dave Gray, we can enhance our Tailwind implementation with dynamic theme switching in a Next.js application. This approach allows users to toggle between light and dark modes seamlessly. For a detailed walkthrough, see Dave Gray's article on implementing light and dark mode in Next.js with TailwindCSS:
+
+[Light & Dark Mode in Next.js App Router + Tailwind with No Flicker](https://www.davegray.codes/posts/light-dark-mode-nextjs-app-router-tailwind) - A comprehensive guide by Dave Gray on integrating light and dark themes in a Next.js application using TailwindCSS and next-themes.
+
+This guide offers insights into handling user preferences for light or dark mode, configuring TailwindCSS, and using the `next-themes` package for a flicker-free user experience.
+
 ## 🔁Reusing Styles
 Tailwind encourages a utility-first workflow, where designs are implemented using only low-level utility classes. This is a powerful way to avoid premature abstraction and the pain points that come with it.
 
@@ -254,7 +262,7 @@ module.exports = {
   ]
 }
 ```
-# 3. Optimizing for Production
+# 4. Optimizing for Production
 Tailwind CSS is incredibly performance focused and aims to produce the smallest CSS file possible by only generating the CSS you are actually using in your project.
 
 Combined with minification and network compression, this usually leads to CSS files that are less than 10kB, even for large projects. For example, Netflix uses Tailwind for Netflix Top 10 and the entire website delivers only 6.5kB of CSS over the network.
@@ -263,7 +271,7 @@ Combined with minification and network compression, this usually leads to CSS fi
 
 If you’re using Tailwind CLI, you can minify your CSS by adding the --minify flag:
 ```npx tailwindcss -o build.css --minify```
-# 4. Comparison
+# 5. Comparison
 ![image](https://github.com/vlas-dev/tailwind-spike/assets/30755101/78be40de-c958-4fc9-93ce-9386ca789cb6)
 ![image](https://github.com/vlas-dev/tailwind-spike/assets/30755101/447f5ea5-b294-430f-acf0-659f071b4811)
 ![image](https://github.com/vlas-dev/tailwind-spike/assets/30755101/24127a19-40a6-4358-bde9-f9ad04a2fc77)
