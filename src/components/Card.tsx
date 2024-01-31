@@ -8,8 +8,8 @@ const cardVariants = cva(
   {
     variants: {
       color: {
-        black: "bg-stone-950 dark:bg-gray-100 text-gray-100 dark:text-gray-800",
-        white: "bg-white dark:bg-stone-950 text-gray-800 dark:text-gray-100",
+        black: "bg-gray-800 dark:bg-gray-100 text-gray-100 dark:text-gray-800",
+        white: "bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100",
         blue: "bg-blue-400",
         red: "bg-red-500",
       },
