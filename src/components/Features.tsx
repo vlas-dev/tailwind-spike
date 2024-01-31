@@ -1,19 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Modal from "./Modal";
 import Button from "./Button";
 import Card from "./Card";
 
 const Features: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
   return (
     <section className="container mx-auto p-6 bg-gray-100 dark:bg-gray-800 min-w-full min-h-screen transition duration-200">
       <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">
@@ -24,9 +14,7 @@ const Features: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mx-10 lg:mx-40">
         {/* Feature Card 1 */}
         <Card color="black">
-          <h3 className="font-semibold text-xl">
-            Responsive Design
-          </h3>
+          <h3 className="font-semibold text-xl">Responsive Design</h3>
           <p className="mt-2">
             Tailwind CSS is built with mobile-first design in mind. Easily build
             responsive designs using its flexible grid system and utility
@@ -39,9 +27,7 @@ const Features: React.FC = () => {
 
         {/* Feature Card 2 */}
         <Card color="white">
-          <h3 className="font-semibold text-xl">
-            Interactive Elements
-          </h3>
+          <h3 className="font-semibold text-xl">Interactive Elements</h3>
           <p className="mt-2">
             Implement interactive UI elements easily. Tailwind&apos;s hover,
             focus, and other interactive classes make it simple and accessible.
@@ -53,9 +39,7 @@ const Features: React.FC = () => {
 
         {/* Feature Card 3 */}
         <Card color="white">
-          <h3 className="font-semibold text-xl">
-            Customization
-          </h3>
+          <h3 className="font-semibold text-xl">Customization</h3>
           <p className="mt-2">
             Tailwind CSS is highly customizable. Adjust your design system or
             create new utilities to fit your unique style with room for
@@ -68,9 +52,7 @@ const Features: React.FC = () => {
 
         {/* Feature Card 4 */}
         <Card color="black">
-          <h3 className="font-semibold text-xl">
-            Dark Mode Support
-          </h3>
+          <h3 className="font-semibold text-xl">Dark Mode Support</h3>
           <p className="mt-2">
             Tailwind CSS provides built-in support for dark mode, allowing you
             to easily switch between light and dark themes in your application.
@@ -88,15 +70,10 @@ const Features: React.FC = () => {
         </div>
       </div>
 
-      {/* Open Modal Button */}
-      <div className="flex flex-col items-center justify-center mt-10 space-y-4">
-        <Button onClick={openModal} variant="blue" className="py-2 px-4">
-          Open Modal
-        </Button>
+      <div className="flex flex-col items-center justify-center mt-10 gap-4">
+        {/* Modal */}
+        <Modal triggerButtonTitle="Modal" />
       </div>
-
-      {/* Modal */}
-      <Modal isOpen={isModalOpen} onClose={closeModal} />
     </section>
   );
 };
